@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 2</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <table>
+                <tr>
+                    <th colspan="7">
+                        <form action="#" name="display">
+                            <input type="text" placeholder="0" id="result" readonly>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="handleButton('clear')">C</button></td>
+                    <td><button class="btn" onclick="handleButton('backspace')">&leftarrow;</button></td>
+                    <td><button class="btn" onclick="handleButton('calculate')">=</button></td>
+                    <td><button class="bttn" onclick="handleButton('pi')">π</button></td>
+                    <td><button class="bttn" onclick="appendValue('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendValue('7')">7</button></td>
+                    <td><button class="btn" onclick="appendValue('8')">8</button></td>
+                    <td><button class="btn" onclick="appendValue('9')">9</button></td>
+                    <td><button class="bttn" onclick="appendValue('^')">x^</button></td>
+                    <td><button class="bttn" onclick="appendValue('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendValue('4')">4</button></td>
+                    <td><button class="btn" onclick="appendValue('5')">5</button></td>
+                    <td><button class="btn" onclick="appendValue('6')">6</button></td>
+                    <td><button class="bttn" onclick="handleButton('log')">ln</button></td>
+                    <td><button class="bttn" onclick="appendValue('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendValue('1')">1</button></td>
+                    <td><button class="btn" onclick="appendValue('2')">2</button></td>
+                    <td><button class="btn" onclick="appendValue('3')">3</button></td>
+                    <td><button class="bttn" onclick="handleButton('sqrt')">&Sqrt;</button></td>
+                    <td><button class="bttn" onclick="appendValue('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="bttn" onclick="handleButton('plusMinus')">&PlusMinus;</button></td>
+                    <td><button class="btn" onclick="appendValue('0')">0</button></td>
+                    <td><button class="bttn" onclick="appendValue('.')">.</button></td>
+                    <td><button class="bttn" onclick="handleButton('square')">x2</button></td>
+                    <td><button class="bttn" onclick="appendValue('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="bttn" onclick="appendValue('(')">&#40</button></td>
+                    <td><button class="bttn" onclick="appendValue(')')">&#41</button></td>
+                    <td><button class="bttn" onclick="handleButton('cos')">cos</button></td>
+                    <td><button class="bttn" onclick="handleButton('sin')">sin</button></td>
+                    <td><button class="bttn" onclick="handleButton('tan')">tan</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
